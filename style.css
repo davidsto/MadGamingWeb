@@ -174,6 +174,7 @@ div {
 
 #news {
 	margin-top: 15px;
+	margin-bottom: 15px;
 	background: #fff;
 }
 
@@ -184,10 +185,80 @@ div {
 #news p {
 	margin-left: 20px;
 	margin-right: 20px;
+	margin-bottom: 20px;
 	background: #fff;
 }
 
 #news a img {
 	margin-left: 10%;
 	width: 70%;
+}
+
+#footer-container {
+	z-index: 2;
+	width: 100%;
+	background: #000;
+}
+
+#footer {
+	height: 300px;
+	background: #000;
+	position: relative;
+}
+
+#footer-top {
+	margin-bottom: 20px;
+	top: 20px;
+}
+
+#footer-top h1 {
+	text-align: center;
+	color: #fff;
+	background: #000;
+}
+
+#footer-top p {
+	text-align: center;
+	color: #fff;
+	background: #000;
+}
+
+#footer-mid {
+	position: relative;
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 203px;
+	background: #000;
+}
+
+#mid-1 {
+	float: left;
+	width: 25%;
+	margin-right: 46px;
+	margin-left: 92px
+}
+
+#mid-2 {
+	float: left;
+	width: 25%;
+	margin-right: 46px;
+	margin-left: 46px
+}
+
+#mid-3 {
+	float: left;
+	width: 25%;
+	margin-right: 92px;
+	margin-left: 46px
+}
+
+#footer-mid h1 {
+	text-align: center;
+	background: #000;
+	color: #fff;
+}
+
+#footer-mid p {
+	background: #000;
+	color: #fff;
 }
