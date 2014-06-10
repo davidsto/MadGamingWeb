@@ -115,6 +115,10 @@
 	color: #fff;
 }
 
+div {
+	display: block;
+}
+
 .top {
 	border-top: 1px solid #D2D2D8;
 }
@@ -124,28 +128,38 @@
 }
 
 #main-page {
+	width: 70%;
 	z-index: 0;
 	position: relative;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #live-container {
-	margin-left: auto;
-	margin-right: auto;
+	background: #fff;
 	position: relative;
 	top: 20px;
-	height: 700px;
+	height: 550px;
 }
 
 #live {
 	position: relative;
 	margin-top: 15px;
+	margin-left: 40px;
+	margin-right: 4px;
 	float: left;
-	margin-left: 20%;
+	background: #fff;
+}
+
+#live a {
+	background: #fff;
 }
 
 #chat {
-	margin-left: 5px;
+	margin-left: 4px;
+	margin-right: 40px;
 	margin-top: 15px;
 	position: relative;
 	float: left;
+	background: #fff;
 }
