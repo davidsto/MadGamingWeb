@@ -2,20 +2,20 @@
 <html>
 	<header>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="responsive.css" media="screen and (max-width: 900px)">
 	</header>
 	<body>
 		<div id="header-con">
 			<div id="header">
-				<div id="header-logo">
-					<div id="logo">
-						<a href="http://www.madgaming.tv"><img src="Resources/Header_logo.png"></a>
-					</div>
+				<div id="logo">
+					<a href="http://www.madgaming.tv"><img src="Resources/Header_logo.png"></a>
 				</div>
 				<div id="social">
 					<a href="https://twitter.com/MadGamingTV"><img src="Resources/Twitter_logo_white.png"></a>
 					<a href="http://www.twitch.tv/madgamingtvgg"><img src="Resources/Twitch_logo_White.png"></a>
-					<a href="https://www.facebook.com/madgamingtv"><img src="Resources/facebook_logo.png"></a>
+					<a href="https://www.facebook.com/madgamingtv"><img src="Resources/facebook_logo.png" class="lastImg"></a>
 				</div>
+				<div class="clear"></div>
 			</div>
 		</div>
 		<div id="nav-con">
@@ -49,37 +49,41 @@
 				<div id="live">
 					<object type="application/x-shockwave-flash" height="508" width="100%" id="live_embed_player_flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=madgamingtvgg" bgcolor="#000000"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="allowNetworking" value="all" /><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf" /><param name="flashvars" value="hostname=www.twitch.tv&channel=madgamingtvgg&auto_play=true&start_volume=25" /></object><a href="http://www.twitch.tv/madgamingtvgg" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px;text-decoration:underline; text-align:center;">Watch live video from MadGamingTVgg on www.twitch.tv</a>
 				</div>
-				<div id="chat">
+				<div id="chat" class="notImportant">
 					<iframe frameborder="0" scrolling="no" src="http://twitch.tv/madgamingtvgg/chat?popout=" height="508" width="100%"></iframe>
 				</div>
+				<div class="clear"></div>
 			</div>
 			<div id="news-container">
-				<div id="news">
+				<div class="news">
 					<a href=""><img src="Resources/Placeholder_img.jpg"></a>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra tortor erat, vel aliquet arcu varius at. Mauris laoreet in neque eu interdum. Vestibulum accumsan, magna nec condimentum mollis, urna sapien fringilla neque, non mattis erat metus et orci. Nullam gravida pulvinar consectetur. Phasellus semper ac risus eget dictum. In hac habitasse platea dictumst. Praesent luctus fermentum sollicitudin. Nunc placerat mi eu sapien blandit, a blandit justo tincidunt. Ut in cursus dolor, eget placerat nisl. Pellentesque eleifend nisi magna, sit amet consectetur augue luctus at. Donec feugiat suscipit vulputate. Donec magna orci, interdum scelerisque gravida sit amet, pulvinar eu ligula. Integer ac orci interdum, tristique massa a, imperdiet sapien. Etiam rhoncus purus id libero semper, et blandit ante lacinia. Pellentesque adipiscing lacinia mauris. Fusce fringilla metus quis ornare iaculis.</p>
 				</div>
 			</div>
 		</div>
+		<div id="third-news">
+			<div id="third-containter">
+				<div  class="third" id="news-1">
+					<a href=""><img src="Resources/Penguins.jpg"></a>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra tortor erat, vel aliquet arcu varius at. Mauris laoreet in neque eu interdum. Vestibulum accumsan, magna nec condimentum mollis, urna sapien fringilla neque, non mattis erat metus et orci. Nullam gravida pulvinar consectetur. Phasellus semper ac risus eget dictum. In hac habitasse platea dictumst. Praesent luctus fermentum sollicitudin. Nunc placerat mi eu sapien blandit, a blandit justo tincidunt. Ut in cursus dolor, eget placerat nisl. Pellentesque eleifend nisi magna, sit amet consectetur augue luctus at. Donec feugiat suscipit vulputate. Donec magna orci, interdum scelerisque gravida sit amet, pulvinar eu ligula. Integer ac orci interdum, tristique massa a, imperdiet sapien. Etiam rhoncus purus id libero semper, et blandit ante lacinia. Pellentesque adipiscing lacinia mauris. Fusce fringilla metus quis ornare iaculis.</p>
+				</div>
+				<div  class="third" id="news-2">
+					<a href=""><img src="Resources/Penguins.jpg"></a>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra tortor erat, vel aliquet arcu varius at. Mauris laoreet in neque eu interdum. Vestibulum accumsan, magna nec condimentum mollis, urna sapien fringilla neque, non mattis erat metus et orci. Nullam gravida pulvinar consectetur. Phasellus semper ac risus eget dictum. In hac habitasse platea dictumst. Praesent luctus fermentum sollicitudin. Nunc placerat mi eu sapien blandit, a blandit justo tincidunt. Ut in cursus dolor, eget placerat nisl. Pellentesque eleifend nisi magna, sit amet consectetur augue luctus at. Donec feugiat suscipit vulputate. Donec magna orci, interdum scelerisque gravida sit amet, pulvinar eu ligula. Integer ac orci interdum, tristique massa a, imperdiet sapien. Etiam rhoncus purus id libero semper, et blandit ante lacinia. Pellentesque adipiscing lacinia mauris. Fusce fringilla metus quis ornare iaculis.</p>
+				</div>
+				<div class="third last-news" id="news-3">
+					<a href=""><img src="Resources/Penguins.jpg"></a>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra tortor erat, vel aliquet arcu varius at. Mauris laoreet in neque eu interdum. Vestibulum accumsan, magna nec condimentum mollis, urna sapien fringilla neque, non mattis erat metus et orci. Nullam gravida pulvinar consectetur. Phasellus semper ac risus eget dictum. In hac habitasse platea dictumst. Praesent luctus fermentum sollicitudin. Nunc placerat mi eu sapien blandit, a blandit justo tincidunt. Ut in cursus dolor, eget placerat nisl. Pellentesque eleifend nisi magna, sit amet consectetur augue luctus at. Donec feugiat suscipit vulputate. Donec magna orci, interdum scelerisque gravida sit amet, pulvinar eu ligula. Integer ac orci interdum, tristique massa a, imperdiet sapien. Etiam rhoncus purus id libero semper, et blandit ante lacinia. Pellentesque adipiscing lacinia mauris. Fusce fringilla metus quis ornare iaculis.</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
 		<div id="footer-container">
 			<div id="footer">
 				<div id="footer-top">
-					<h1>Section 1</h1>
+					<h1>Footer</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque, elit non egestas vehicula, sem arcu porttitor eros, id laoreet.</p>
 				</div>	
-				<div id="footer-mid">
-					<div id="mid-1">
-						<h1>Section 2</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque, elit non egestas vehicula, sem arcu porttitor eros, id laoreet.</p>
-					</div>
-					<div id="mid-2">
-						<h1>Section 3</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque, elit non egestas vehicula, sem arcu porttitor eros, id laoreet.</p>
-					</div>
-					<div id="mid-3">
-						<h1>Section 4</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque, elit non egestas vehicula, sem arcu porttitor eros, id laoreet.</p>
-					</div>
-				</div>
 			</div>
 		</div>
 	</body>

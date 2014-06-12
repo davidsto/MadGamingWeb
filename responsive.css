@@ -1,0 +1,47 @@
+#main-page {
+	width: 100%;
+}
+
+#chat {
+		display: none;
+}
+
+#live {
+	width: 98%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.third {
+	width: 47.5%;
+}
+
+#news-2 {
+	margin-right: 0;
+}
+
+#news-3 {
+	clear: both;
+	float: none;
+	width: auto;
+	padding-top: 20px;
+}
+
+@media screen and (max-width: 500px) {
+
+	#live {
+		width: 98%;
+		margin-right: 1%;
+		margin-left: 1%;
+	}
+
+	#chat {
+		display: none;
+	}
+
+	#main-page, .third {
+		width: auto;
+		float: none;
+		margin-right: 0;
+	}
+}
