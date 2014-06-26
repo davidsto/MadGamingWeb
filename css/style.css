@@ -1,6 +1,13 @@
 
 .social-image {
-	width: 25px;
+	width: 30px;
+	height: auto;
+	margin-right: 15px;
+	margin-top: 10px;
+}
+
+.twitch {
+	margin-top: 20px;
 }
 
 .clear {
@@ -10,4 +17,9 @@
 #chat {
 	padding: 0;
 	border: 1px solid #101010;
+}
+
+.navbar-inverse .nav > li > a.social {
+    padding: 0px;
+    margin: 0px;    
 }
