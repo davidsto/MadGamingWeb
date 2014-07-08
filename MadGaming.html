@@ -10,7 +10,7 @@
 
 <body>
 
-<div class="navbar navbar-inverse navbar-static-top" role="navigator">
+<div class="navbar navbar-inverse navbar-static-top madNav" role="navigator">
 	<div class="container">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -47,8 +47,9 @@
 	</div>
 </div>
 
-<div class="container" role="main">
-	<div class="jumbotron">
+
+<div class="jumbotron">
+	<div class="container"  id="target1">
 	    <div id="live" class="col-md-8">
 			<object type="application/x-shockwave-flash" height="508" width="100%" id="live_embed_player_flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=madgamingtvgg" bgcolor="#000000"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="allowNetworking" value="all" /><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf" /><param name="flashvars" value="hostname=www.twitch.tv&channel=madgamingtvgg&auto_play=true&start_volume=25" /></object>
 		</div>
@@ -58,7 +59,14 @@
 		<div class="clear"></div>
 		<a href="http://www.twitch.tv/madgamingtvgg">Watch live video from MadGamingTVgg on www.twitch.tv</a>
 	</div>
+	<div class="container" id="target2" style="display: none" >
+        <h1>Vi er ikke live!</h1>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+        <p><a class="btn btn-primary btn-lg" role="button">Se tidligere streams &raquo;</a></p>
+  	</div>
+</div>
 
+<div class="container" role="main">
 	<div class="row">
         <div class="col-md-4 col-xs-12 col-sm-6">
           <h2>Heading</h2>
@@ -66,9 +74,9 @@
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-4 col-xs-12 col-sm-6">
-          <h2>Heading</h2>
+          <h2>Middlertidig live toggle</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><button class="button" onclick="$('#target1, #target2').toggle();">Live!</button></p>
        </div>
         <div class="col-md-4 col-xs-12">
           <h2>Heading</h2>
