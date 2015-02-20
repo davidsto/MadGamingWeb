@@ -7,6 +7,7 @@
 	<link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://apis.google.com/js/platform.js"></script>
+
 </head>
 
 <body>
@@ -49,10 +50,35 @@
 </div>
 
 <div class="container">
-<div class="jumbotron">
-	<div class="container">
+<div class="jumbotron video-container">
+	<div class="container videos" id="target-1">
 		<div class="col-md-12">
+			<h2 class="video_title">Nyeste video</h2>
 			<iframe id="ytplayer" type="text/html" width="100%" height="540px" src="https://www.youtube.com/embed/eolG_aR3y0s" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="container videos" id="target-2" style="display: none">
+		<div class="col-md-12">
+			<h2 class="video_title">Valgt video</h2>
+			<iframe id="ytplayer" type="text/html" width="100%" height="540px" src="https://www.youtube.com/embed/oGf7ocKY-ic" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="container videos" id="target-3" style="display: none">
+		<div class="col-md-12">
+			<h2 class="video_title">Valgt video</h2>
+			<iframe id="ytplayer" type="text/html" width="100%" height="540px" src="https://www.youtube.com/embed/5z2phiWpemk" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="container videos" id="target-4" style="display: none">
+		<div class="col-md-12">
+			<h2 class="video_title">Valgt video</h2>
+			<iframe id="ytplayer" type="text/html" width="100%" height="540px" src="https://www.youtube.com/embed/NatmYdAe9mg" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="container videos" id="target-5" style="display: none">
+		<div class="col-md-12">
+			<h2 class="video_title">Valgt video</h2>
+			<iframe id="ytplayer" type="text/html" width="100%" height="540px" src="https://www.youtube.com/embed/XUoonqsYwrw" frameborder="0" allowfullscreen></iframe>
 		</div>
 	</div>
 </div>
@@ -60,26 +86,33 @@
 
 <div class="container">
 	<div class="row">
-        <div class="col-md-4 col-xs-12 col-sm-6">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4 col-xs-12 col-sm-6">
+        <div class="col-md-12 col-xs-12 col-sm-12">
           <h2>Liste med videoer her?</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <a href="javascript:showChosenVideo('target-1')"><img  width="196"src="Resources/placeholder_video3.webp"></a>
+         <a href="javascript:showChosenVideo('target-2')"><img  width="196" src="Resources/placeholder_video1.webp"></a>
+         <a href="javascript:showChosenVideo('target-3')"><img  width="196"src="Resources/placeholder_video2.webp"></a>
+         <a href="javascript:showChosenVideo('target-4')"><img  width="196"src="Resources/placeholder_video4.webp"></a>
+         <a href="javascript:showChosenVideo('target-5')"><img  width="196"src="Resources/placeholder_video5.webp"></a>
           <div class="g-ytsubscribe" data-channel="GoogleDevelopers" data-layout="default" data-count="default"></div>
        </div>
-        <div class="col-md-4 col-xs-12">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
 	</div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="Bootstrap/js/bootstrap.min.js"></script>
+<script>
+	function showChosenVideo(chosenOne){
+		$('.videos').each(function(index){
+			if($(this).attr("id") == chosenOne){
+				$(this).show();
+			}
+			else {
+				$(this).hide();
+			}
+		});
+	}
+</script>
+
 
 </body>
 </html>
