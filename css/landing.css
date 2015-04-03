@@ -1,0 +1,45 @@
+body{
+	background: #171717;
+}
+
+#logo{
+	margin-top: 5%;
+	text-align: center;
+	margin-bottom: 2%;
+}
+
+.logo-icon{
+	padding-top: 52px;
+	font-size: 110px !important;
+	color: #ffffff;
+}
+
+.line{
+	width:2px;
+	margin-left: 50%;
+}
+
+.no-padding{
+	padding-right: 0;
+	padding-left: 0; 
+}
+
+#face:hover li{
+	color: #3b5998;
+}
+
+#twitter:hover li{
+	color: #1d6bab;
+}
+
+#youtube:hover li{
+	color: #cb2627;
+}
+
+#twitch:hover li{
+	color: #6c2498;
+}
+
+#archive:hover li{
+	color: #ff0000;
+}
